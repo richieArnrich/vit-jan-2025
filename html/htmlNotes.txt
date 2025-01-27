@@ -1,0 +1,53 @@
+1. Teach you the theory + practical 
+2. Provide you with a comprehensive study guide (notes for the day)
+3. Share the codes on github
+----------------------------------------------------------------------------
+Introduction to HTML
+=====================================
+HTML :
+- HyperText Markup Language
+- Used to create web pages
+- Not a programming language, but a markup language
+- Used to structure content on the webpage
+- Not used for styling or layout, but for content
+----------------------------------------------------------------------------
+HTML Elements
+=====================================
+- Elements are the building blocks of HTML
+- Elements are represented by tags
+- Tags are surrounded by angle brackets < >
+- Tags are used to define the start and end of an element
+- Elements can have attributes
+--------------------------------------------------------------------------
+Attributes
+=====================================
+- Attributes are used to provide additional information about an element
+- Attributes are represented by a name and a value
+- Example: class = "className" or href = "https://google.com"
+----------------------------------------------------------------------------
+Block Elements vs Inline Elements
+=====================================
+- Block Elements:
+- Take up the full width of the parent element
+- Start on a new line
+
+- Inline Elements:
+- Do not take up the full width of the parent element
+- Do not start on a new line
+----------------------------------------------------------------------------
+Structure of an html page
+=====================================
+- Doctype: Declares the document type
+- html: The root element of the HTML document
+- head: Contains metadata about the document
+- body: Contains the content of the document
+
+<!Doctype html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <!-- content here -->
+    </body>
+</html>
