@@ -51,3 +51,17 @@ Structure of an html page
         <!-- content here -->
     </body>
 </html>
+-----------------------------
+Table in HTML
+=====================================
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Cell 1   | Cell 2   | Cell 3   |
+|----------|----------|----------|
+| Cell 4   | Cell 5   | Cell 6   |
+
+<table> : represents the whole table
+<tr> : represents a table row
+<td> : represents a table cell
+<th> : represents a column head
+-----------------------------------------------
