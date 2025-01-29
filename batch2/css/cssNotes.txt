@@ -1,0 +1,54 @@
+            Cascading Style Sheets
+=======================================================================
+CSS: Cascading style Sheets
+CSS (Cascading Style Sheets) is a styling language used to control the layout and appearance of
+web pages written in HTML or XML.
+CSS is used to separate the presentation of a document from its structure, which makes it easier 
+to maintain and update the layout of a web page.
+--------------------------------------------------
+Types of styling:
+1. Inline styling: This is the most basic form of styling, where the style is applied directly
+to an HTML element using the style attribute.
+Eg: <h1 style="color: blue">This is Heading</h1>
+2. Internal styling: This is where the style is defined within the HTML document itself,
+using the <style> tag.
+Eg: <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+3. External styling: This is where style is applied in an external .css file and linked to html
+using <link> tag
+
+-----------------------------------------------
+CSS selectors
+----------------------------------------------
+CSS selectors are used to select HTML elements and apply styles to them.
+Types of selectors:
+1. Universal selector(*): selects all the elements in the html page
+2. Tag selector: selects all the elements of a particular tag name
+3. Class selector (.): selects all the elements with a particular class name
+4. ID selector (#): selects a single element with a particular id
+-----------------------------------------------
+CSS specificity 
+-----------------------------------------------
+CSS specificity is a measure of how specific a CSS selector is.
+The specificity of a selector is determined by the number of ID, class, and tag 
+selectors it contains.
+
+Order of specificity:
+1. ID selector (#id)
+2. Class selector (.class)
+3. Tag selector (tag)
+4. Universal selector
+---------------------------------------------
+CSS Display Property
+--------------------------------------------
+The display property in CSS is used to specify how an element should be displayed.
+There are several values for the display property, including:
+a. inline: elements are displayed as inline elements in a single row
+b. block: elements are displayed as block elements, taking up the full width of their parent element
+c. inline-block: elements are displayed as inline elements, but can have a width and height
+d. none: elements are not displayed at all
+e. flex: elements are displayed within a flex box and can be aligned horizontally and vertically
+f. grid: elements are displayed in row and column manner
