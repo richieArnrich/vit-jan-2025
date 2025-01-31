@@ -34,6 +34,27 @@
         height: 50px;
         width: 50px;
       }
+
+      .display-flex-cont {
+        background-color: red;
+        height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        /* align item horizontally */
+        align-items: center;
+        /* align item vertically */
+      }
+      .flex-item {
+        background-color: green;
+        height: 120px;
+        width: 120px;
+      }
+      .flex-direction-cont {
+        background-color: lightgrey;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -50,6 +71,19 @@
       <div class="inline-block-item">Item 3</div>
       <div class="inline-block-item">Item 4</div>
       <div class="inline-block-item">Item 5</div>
+    </div>
+    <!-- display-flex -->
+    <div class="display-flex-cont">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+      <div class="flex-item">Item 4</div>
+    </div>
+    <div class="flex-direction-cont">
+      <div class="flex-item" style="background-color: green">Item 1</div>
+      <div class="flex-item" style="background-color: orange">Item 2</div>
+      <div class="flex-item" style="background-color: purple">Item 3</div>
+      <div class="flex-item" style="background-color: yellow">Item 4</div>
     </div>
   </body>
 </html>

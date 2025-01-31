@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .relative-parent {
+        background-color: red;
+      }
+      .relative-div {
+        background-color: yellow;
+        height: 120px;
+        width: 120px;
+        position: relative;
+        /* offset properties */
+        top: 100px;
+        left: 100px;
+      }
+      .scrolling-div {
+        height: 120vh;
+        background-color: lavender;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative-parent">
+      <div class="relative-div">I am relative div</div>
+    </div>
+    <div class="scrolling-div"></div>
+  </body>
+</html>

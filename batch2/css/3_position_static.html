@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .static-parent {
+        background-color: red;
+      }
+      .static-div {
+        background-color: yellow;
+        height: 120px;
+        width: 120px;
+        position: static;
+      }
+      .scrolling-div {
+        height: 120vh;
+        background-color: lavender;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static-parent">
+      <div class="static-div">I am static div</div>
+    </div>
+    <div class="scrolling-div"></div>
+  </body>
+</html>
