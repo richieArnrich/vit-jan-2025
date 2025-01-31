@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+      }
+      .container {
+        background-color: red;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        background-color: yellow;
+        height: 120px;
+        width: 120px;
+        /* margin: 5px; */
+      }
+      .flex-dir-container {
+        background-color: red;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .flex-wrap-cont {
+        background-color: orange;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- align item to the center -->
+    <!-- <div class="container">
+      <div class="item">Center Item</div>
+    </div> -->
+    <!-- <div class="flex-dir-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div> -->
+    <div class="flex-wrap-cont">
+      <div class="item" style="background-color: green">1</div>
+      <div class="item" style="background-color: olive">1</div>
+      <div class="item" style="background-color: blue">1</div>
+      <div class="item" style="background-color: purple">1</div>
+      <div class="item" style="background-color: yellow">1</div>
+    </div>
+    <!-- break for 5 mins -->
+  </body>
+</html>

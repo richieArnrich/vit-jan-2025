@@ -29,21 +29,70 @@
         height: 40px;
         width: 100px;
       }
+      .flex-container {
+        background-color: lightgreen;
+        padding: 5px;
+        display: flex;
+        height: 40vh;
+        justify-content: space-between; /* horizontal alignment */
+        align-items: end; /* vertical alignment */
+      }
+      .flex-item {
+        background-color: yellow;
+        height: 120px;
+        width: 120px;
+        margin: 5px;
+      }
+      .display-grid {
+        background-color: hotpink;
+        margin-top: 10px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+      }
+      .grid-item {
+        background-color: orange;
+        margin: 5px;
+      }
     </style>
   </head>
   <body>
+    <!-- display-inline -->
     <div class="display-inline">
       <div class="inline-item">Item 1</div>
       <div class="inline-item">Item 2</div>
       <div class="inline-item">Item 3</div>
       <div class="inline-item">Item 4</div>
     </div>
+    <!--  -->
+    <!-- display inline-block -->
     <div class="display-inline-block">
       <div class="inline-block-item">Item 1</div>
       <div class="inline-block-item">Item 2</div>
       <div class="inline-block-item">Item 3</div>
       <div class="inline-block-item">Item 4</div>
       <div class="inline-block-item">Item 4</div>
+    </div>
+    <!--  -->
+    <!-- display flex -->
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+      <div class="flex-item">Item 4</div>
+    </div>
+    <!-- display - grid -->
+    <div class="display-grid">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div>
+      <div class="grid-item">Item 7</div>
+      <div class="grid-item">Item 8</div>
+      <div class="grid-item">Item 9</div>
     </div>
   </body>
 </html>

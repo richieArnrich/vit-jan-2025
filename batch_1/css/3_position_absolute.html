@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: red;
+      }
+      .abs-parent {
+        background-color: green;
+        height: 400px;
+        width: 400px;
+        position: relative;
+      }
+      .abs-div {
+        background-color: yellow;
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        left: 120px;
+        /* top: 120px; */
+        bottom: 0px;
+      }
+      .scrolling-div {
+        height: 120vh;
+        background-color: rgb(133, 133, 253);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abs-parent">
+      <div class="abs-div">I am absolute div</div>
+    </div>
+    <div class="scrolling-div"></div>
+  </body>
+</html>

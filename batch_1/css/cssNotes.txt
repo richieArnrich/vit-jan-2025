@@ -53,3 +53,18 @@ c. inline-block: elements are displayed as inline elements, but can have a width
 d. none: elements are not displayed at all
 e. flex: elements are displayed within a flex box and can be aligned horizontally and vertically
 f. grid: elements are displayed in row and column manner
+
+install git and create an account on github.com
+-------------------------------------------------------
+CSS Position property
+--------------------------------------------------------
+The position property in CSS is used to specify the position of an element relative to its parent element.
+Types of positions in css:
+1. static: the default position of an element, it is placed according to the normal document flow
+2. relative: the element is placed according to the normal document flow, but can be moved relative
+to its normal position
+3. absolute: the element is removed from the normal document flow and is placed relative to its nearest
+ancestor that has a position other than static
+4. fixed : the element stays fixed in a given point on the screen
+5. sticky: the element has the behaviour of relative and fixed, relative upto a threshold point and 
+fixed after that.
