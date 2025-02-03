@@ -1,0 +1,82 @@
+What is bootstrap?
+Bootstrap is a popular front-end framework that helps developers create responsive, mobile-first websites 
+and web applications.
+Is bootstrap free? : yes
+Is bootstrap open source? : yes
+------------------------
+It provides prebuilt css classes for creating responsive webapps and webpages
+
+text classes
+- text-primary
+- text-secondary
+- text-success
+- text-danger
+- text-warning
+
+background classes
+- bg-primary
+- bg-secondary
+- bg-success
+- bg-danger
+- bg-warning
+
+typography classes
+- h1 to h6
+- lead
+- display-1 to display-6
+
+margin and padding classes
+- m-0 to m-5 - margin all around
+- p-0 to p-5 - padding all around
+- mx-0 to mx-5 - margin on left and right
+- my-0 to my-5 - margin on top and bottom
+- px-0 to px-5 - padding on left and right
+- py-0 to py-5 - padding on top and bottom
+------------------------
+### Bootstrap Grid System
+The Bootstrap grid system is a powerful tool for creating responsive layouts. It consists of 12 columns,
+which can be divided into rows and columns. The grid system is based on a 12-column grid
+### Bootstrap Grid Classes
+- container
+- row
+- col-md-1 to col-md-12
+- offset-md-1 to offset-md-12
+### Bootstrap Utilities Classes
+- d-flex
+- d-none
+- d-block
+### Bootstrap Responsive Design
+Bootstrap provides a powerful tool for creating responsive designs. It uses a mobile-first approach, which means that
+the layout is designed for small screens first and then scaled up for larger screens.
+### Bootstrap Responsive Design Classes
+- d-none d-md-block
+- d-block d-md-none
+### Bootstrap Responsive Design Utilities
+- d-flex d-md-none
+
+-------------------------
+### Bootstrap Card class
+The Bootstrap Card class is used to create a card component. It is a container for displaying content in
+a visually appealing way.
+### Bootstrap Card Classes
+- card
+- card-body
+- card-image-top
+
+###Bootstrap navbar
+The Bootstrap navbar is a navigation bar component. It is used to display navigation links and other
+content in a responsive way.
+### Bootstrap Navbar Classes
+- navbar
+- navbar-expand-lg
+- navbar-light
+### Bootstrap Navbar Utilities
+- navbar-brand
+- navbar-nav
+### Bootstrap Navbar Items
+- nav-item
+- nav-link
+### Bootstrap Navbar Toggler
+- navbar-toggler
+### Bootstrap Navbar Collapse Classes
+- navbar-collapse

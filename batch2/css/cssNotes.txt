@@ -63,6 +63,6 @@ Types of positions in css:
 to its normal position
 3. absolute: the element is removed from the normal document flow and is placed relative to its nearest
 ancestor that has a position other than static
-4. fixed : the element stays fixed in a given point on the screen
+4. fixed : it is removed from flow of the document,and stays fixed in a given point on the screen
 5. sticky: the element has the behaviour of relative and fixed, relative upto a threshold point and 
 fixed after that.
