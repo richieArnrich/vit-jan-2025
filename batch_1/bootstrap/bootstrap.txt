@@ -1,0 +1,7 @@
+What is bootstrap?
+Bootstrap is a popular front-end framework that helps developers create responsive, mobile-first websites 
+and web applications.
+Is bootstrap free? : yes
+Is bootstrap open source? : yes
+------------------------
+It provides prebuilt css classes for creating responsive webapps and webpages
