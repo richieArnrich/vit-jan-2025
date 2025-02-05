@@ -1,0 +1,25 @@
+ - html file must be named as index.html
+ - create a repository in GitHub
+
+
+ - git init - initialise .git folder
+ - git add . -- add files into the .git folder
+ - git commit -m "your message" -- create a pointer for the files which are added in .git folder
+ - git branch -m main -- create a branch in GitHub (subfolder)
+ - git remote add origin link of repository -- link .git folder to the repository in the GitHub 
+ - git push origin main -- pushing all the files in the local .git folder to the repository on the internet
+
+---------------------------------------
+config commands
+1. Set your username:
+	git config --global user.name "FIRST_NAME LAST_NAME"
+2. Set your email address:
+	git config --global user.email "MY_NAME@example.com"
+
+---------------------------------------------------------------------------
+Deploy on GitHub:
+Settings --> Pages -- select branch name as main --> save
+Actions --> page build and deployment --> deployed link
+------------------------------------------------------------------------------------------------
+Git is a tool that is used to push our code to GitHub
+GitHub is a community where you can deploy code and share your code and codebase
