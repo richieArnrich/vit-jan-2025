@@ -1,0 +1,90 @@
+                                JavaScript
+=================================================================================
+JavaScript is a client side programming language
+
+What is client side?
+Client side refers to the part of the web application that runs on the user's device, such as
+the browser. This is in contrast to server side, which refers to the part of the web application
+that runs on the server.
+
+----------------------------------------------------------------------------------
+###JavaScript Variables
+=================================================================================
+JavaScript variables are used to store and manipulate data. 
+They are created using three keywords
+- let
+- const
+- var
+ Variables created using let keyword:
+
+ Syntax: 
+ let variableName = value;
+
+ - can be reassigned (values can be updated)
+ - cannot be redeclared
+ 
+ Variables using const keyword
+ Syntax:
+ const variableName = value;
+
+  - cannot be reassigned
+  - cannot be redeclared
+
+  Variables using var keyword:
+  Syntax:
+  var variableName = value;
+
+  - can be reassigned
+  - can be redeclared
+---------------------------------------------------------------------
+###JavaScript Data Types
+=================================================================================
+Datatypes are those kind of values which can be stored in a given variable in JavaScript.
+
+JavaScript has several data types, including:
+- Number: used to store numeric values
+- String: used to store text values
+- Boolean: used to store true or false values
+- Null: used to store a value that represents the absence of any object value
+- Undefined: used to store a value that has not been assigned a value
+- Object: used to store collections of key-value pairs
+- Array: used to store collections of values in a specific order
+---------------------------------------------------------------------
+###Operators in JavaScript
+=================================================================================
+JavaScript has several types of operators, including:
+- Arithmetic operators: used to perform mathematical operations (e.g. +, -, \*, /)
+- Assignment operators: used to assign values to variables (e.g. =, +=, -=,
+\* =, /=, %=, etc.)
+- Comparison operators: used to compare values (e.g. ==, !=, ===, !==,
+<, >, <=, >=)
+- Logical operators: used to combine conditional statements (e.g. &&, ||, !)
+- Bitwise operators: used to perform bitwise operations (e.g. &, |, ^, ~
+, <<, >>, >>>)
+---------------------------------------------------------------------
+###Control Structures in JavaScript
+=================================================================================
+Control structures in JavaScript are used to control the flow of a program's execution. They include:
+- Conditional statements: used to execute different blocks of code based on a condition (e.g. if
+else, switch)
+- Loops: used to execute a block of code repeatedly (e.g. for, while,
+do...while)
+---------------------------------------------------------------------
+Conditional statements
+=================================================================================
+- if statement: used to execute a block of code if a condition is true
+- if...else statement: used to execute a block of code if a condition is true, and
+another block of code if the condition is false
+- switch statement: used to execute a block of code based on the value of a variable
+- nested if-else : if-else inside if-else
+- ifelse-if ladder: Multiple conditions are checked
+if-else-if-else-if-else
+---------------------------------------------------------------------
+Loops:
+=================================================================================
+- for loop: used to execute a block of code repeatedly for a specified number of times
+- while loop: used to execute a block of code repeatedly while a condition is true
+- do...while loop: used to execute a block of code repeatedly while a condition is true
+- for..in loop: used to interate through objects
+- for..of loop: used to iterate through arrays (forEach - arrays)
+---------------------------------------------------------------------

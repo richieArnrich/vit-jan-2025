@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript Variables</h1>
+    <script>
+      // variables using let keyword
+      let name = "Ganguly";
+      let age = 25;
+      document.write(name + "<br>");
+      document.write(age + "<br>");
+      name = "Sehwag"; // reassign values to variables created using let keyword
+      age = 30;
+      document.write(name + "<br>");
+      document.write(age + "<br>");
+      // let name = "Sachin"; error, cannot redeclare variables using let keyword
+
+      //   variables using const keyword
+      const country = "India"; //behaves as constant throughout the program
+      console.log(country); // data testing purpose
+      //   country = "England"; // error, cannot reassign variables using const keyword
+
+      //   variables using var keyword
+      var city = "Mumbai";
+      document.write(city + "<br>");
+      city = "Kolkata";
+      document.write(city + "<br>"); //able to reassign values
+      var city = "Chennai";
+      document.write(city + "<br>"); // able to redeclare variables using var keyword
+    </script>
+  </body>
+</html>
