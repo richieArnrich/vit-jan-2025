@@ -135,3 +135,39 @@ Loops:
     4. Increment/decrement is done
     5. Condition is checked again
     6. Steps 3-5 are repeated until condition is false
+    =================================================================================
+  ---------------------------------------------------------------------------------------
+
+Objects in JavaScript:
+=================================================================================
+Objects in JavaScript are collections of key-value pairs.
+- Key is a string
+- Value can be any data type
+- Key-value pairs are enclosed in curly brackets
+- Key-value pairs are separated by commas
+- Key-value pairs are called properties
+- Value of a property can be accessed using dot notation or bracket notation
+- Bracket notation is used when key contains special characters or is a variable
+- Object can be created using object literal syntax or object constructor syntax
+
+Objects using object literals:
+=================================================================================
+Syntax:
+let object_name = {
+  key1: value1,
+}
+eg:
+let person = {
+  name: "John",
+  age: 25,
+  height: 5.5,
+  weight: 60.06,
+  address: {
+    street: "123, main st",
+    city: "New York",
+    state: "NY",
+    zip: "10001"
+  },
+  hobbies: ["reading", "swimming", "cycling"],
+  isMarried: true,
+}

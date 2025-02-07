@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      // Define an object
+      let person = {
+        name: "John",
+        age: 25,
+        height: 5.5,
+        weight: 60.06,
+        isMarried: true,
+        address: {
+          street: "123, main st",
+          city: "New York",
+          state: "NY",
+          zip: "10001",
+        },
+      };
+      // Accessing properties
+      document.write(person.name + "<br>");
+      document.write(person.age + "<br>");
+      document.write(person["height"] + "<br>");
+      document.write(person["weight"] + "<br>");
+      console.log(person.address);
+      console.log(person.hobbies);
+      document.write("<br>--------------------------------------<br>");
+      //   for..in loop
+      for (let key in person) {
+        if (key == "address") {
+          break;
+        } else {
+          document.write(key + " : " + person[key] + "<br>");
+        }
+      }
+      for (let k in person.address) {
+        document.write(k + ": " + person.address[k] + "<br>");
+      }
+    </script>
+  </body>
+</html>
