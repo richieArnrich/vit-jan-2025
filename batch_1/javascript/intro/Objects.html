@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      // Define an object
+      let person = {
+        // key:value
+        name: "Anil",
+        age: 20,
+        fatherName: "Subash",
+        address: {
+          street: "123 Main St",
+          city: "Anytown",
+          state: "CA",
+          zip: "12345",
+        },
+      };
+      // Accessing object properties
+      //   document.write(person.name + "<br>");
+      //   document.write(person["age"]);
+
+      //   for in loop : iterate through object keys
+      for (let key in person) {
+        if (key == "address") {
+          for (let k in person["address"]) {
+            document.write(k + ": " + person["address"][k] + "<br>");
+          }
+        } else {
+          document.write(key + " = " + person[key] + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

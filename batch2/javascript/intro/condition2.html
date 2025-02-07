@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let choice = 5;
+      switch (choice) {
+        case 1:
+          {
+            document.write("case 1 chosen<br>");
+          }
+          break;
+        case 2:
+          {
+            document.write("case 2 chosen<br>");
+          }
+          break;
+        case 3:
+          {
+            document.write("case 3 chosen<br>");
+          }
+          break;
+        default: {
+          document.write("case out of range<br>");
+        }
+      }
+
+      //   nested if else
+      let day = "tuesday";
+      let time = "morning";
+      if (day == "monday") {
+        if (time == "morning") {
+          document.write("monday morning<br>");
+        } else if (time == "afternoon") {
+          document.write("monday afternoon<br>");
+        } else {
+          document.write("monday evening<br>");
+        }
+      } else {
+        document.write("not monday<br>");
+      }
+    </script>
+  </body>
+</html>

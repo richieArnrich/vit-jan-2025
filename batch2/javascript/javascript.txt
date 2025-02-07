@@ -77,7 +77,7 @@ Conditional statements
 another block of code if the condition is false
 - switch statement: used to execute a block of code based on the value of a variable
 - nested if-else : if-else inside if-else
-- ifelse-if ladder: Multiple conditions are checked
+- if-else-if ladder: Multiple conditions are checked
 if-else-if-else-if-else
 ---------------------------------------------------------------------
 Loops:
@@ -88,3 +88,50 @@ Loops:
 - for..in loop: used to interate through objects
 - for..of loop: used to iterate through arrays (forEach - arrays)
 ---------------------------------------------------------------------
+    Loops:
+    =================================================================================
+    While Loop:
+    =================================================================================
+    Syntax:
+    initialisation
+    while(condition){
+      code to be executed
+      increment/decrement
+    }
+    Workflow of while loop:
+    1. Initialisation
+    2. Condition is checked
+    3. If condition is true then code inside the loop is executed
+    4. Increment/decrement is done
+    5. Condition is checked again
+    6. Steps 3-5 are repeated until condition is false
+    =================================================================================
+    do while loop:
+    =================================================================================
+    Syntax:
+    initialisation
+    do{
+      code to be executed
+      increment/decrement
+    }while(condition)
+
+    Workflow
+    1. Initialisation
+    2. Code inside the loop is executed
+    3. Increment/decrement is done
+    4. Condition is checked
+    5. Steps 2-4 are repeated until condition is false
+    =================================================================================
+    for loop:
+    =================================================================================
+    Syntax:
+    for(initialisation; condition; increment/decrement){
+      code to be executeds
+    }
+    Workflow
+    1. Initialisation
+    2. Condition is checked
+    3. If condition is true then code inside the loop is executed
+    4. Increment/decrement is done
+    5. Condition is checked again
+    6. Steps 3-5 are repeated until condition is false
