@@ -86,3 +86,158 @@ Loops:
 - for..in loop: used to interate through objects
 - for..of loop: used to iterate through arrays (forEach - arrays)
 ---------------------------------------------------------------------
+    Loops:
+    =================================================================================
+    While Loop:
+    =================================================================================
+    Syntax:
+    initialisation
+    while(condition){
+      code to be executed
+      increment/decrement
+    }
+    Workflow of while loop:
+    1. Initialisation
+    2. Condition is checked
+    3. If condition is true then code inside the loop is executed
+    4. Increment/decrement is done
+    5. Condition is checked again
+    6. Steps 3-5 are repeated until condition is false
+    =================================================================================
+    do while loop:
+    =================================================================================
+    Syntax:
+    initialisation
+    do{
+      code to be executed
+      increment/decrement
+    }while(condition)
+
+    Workflow
+    1. Initialisation
+    2. Code inside the loop is executed
+    3. Increment/decrement is done
+    4. Condition is checked
+    5. Steps 2-4 are repeated until condition is false
+    =================================================================================
+    for loop:
+    =================================================================================
+    Syntax:
+    for(initialisation; condition; increment/decrement){
+      code to be executeds
+    }
+    Workflow
+    1. Initialisation
+    2. Condition is checked
+    3. If condition is true then code inside the loop is executed
+    4. Increment/decrement is done
+    5. Condition is checked again
+    6. Steps 3-5 are repeated until condition is false
+    =================================================================================
+  ---------------------------------------------------------------------------------------
+
+Objects in JavaScript:
+=================================================================================
+Objects in JavaScript are collections of key-value pairs.
+- Key is a string
+- Value can be any data type
+- Key-value pairs are enclosed in curly brackets
+- Key-value pairs are separated by commas
+- Key-value pairs are called properties
+- Value of a property can be accessed using dot notation or bracket notation
+- Bracket notation is used when key contains special characters or is a variable
+- Object can be created using object literal syntax or object constructor syntax
+
+Objects using object literals:
+=================================================================================
+Syntax:
+let object_name = {
+  key1: value1,
+}
+eg:
+let person = {
+  name: "John",
+  age: 25,
+  height: 5.5,
+  weight: 60.06,
+  address: {
+    street: "123, main st",
+    city: "New York",
+    state: "NY",
+    zip: "10001"
+  },
+  hobbies: ["reading", "swimming", "cycling"],
+  isMarried: true,
+}
+----------------------------------------------------------------------------
+Functions in Javascript:
+=================================================================================
+Functions in JavaScript are blocks of code that can be executed multiple times from different parts of the program.
+- Functions can take arguments
+- Functions can return values
+- Functions can be defined using function declaration syntax or function expression syntax
+- Functions can be called using function name or function reference
+
+Types of functions:
+ a. Based on parameters:
+ - Non-parameterised functions:
+   - Do not take in inputs while being called
+   - Example: function greet() { 
+      console.log("Hello, World!"); 
+    }
+  
+  - Parameterised functions:
+    - Take in inputs while being called
+    - Example: function greet(name) {
+      console.log("Hello, " + name + "!");
+    }
+  
+b. Based on names:
+  - Named functions:
+    - Have a name
+    - Can be called by name
+    - Example: function greet() {
+      console.log("Hello, World!");
+    }
+
+  - Anonymous function:
+    - Do not have a name
+    - Can be called using a reference (variable)
+    - Example: let greet = function() {
+      console.log("Hello, World!");
+    }
+  
+  - Arrow function:
+    - A concise way to write a function
+    - Do not have a name and can be called using a reference
+    - Example: let greet = () => {
+        console.log("Hello, World!");
+      }
+  
+----------------------------------------------------------------------------------------
+BOM and DOM
+=====================================================================================
+- BOM (Browser Object Model):
+  - Provides access to the browser's functionality
+  - Provides functions and attributes for JavaScript to communicate with the browser
+  - BOM is the top-level object in the browser's object hierarchy
+  - BOM is accessed using the window object
+  - BOM has the following properties and methods:
+    - alert()
+    - confirm()
+    - prompt()
+    - setTimeout()
+    - setInterval()
+
+- DOM (Document Object Model):
+  - It provides access to the current the HTML page
+  - It is a tree-like structure that represents the HTML document
+  - DOM is accessed using the document object
+  - DOM has the following properties and methods:
+    - getElementById()
+    - getElementsByClassName()
+    - getElementsByTagName()
+    - createElement()
+    - appendChild()
+  -------Question:  Write a program to take in user input for content, font size, color of the
+      font and display the data accordingly

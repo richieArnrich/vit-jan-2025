@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>DOM Object</h1>
+    <div id="mydiv"></div>
+    <script>
+      console.log(document); // dom will read the html in a tree like structure, in a way in which
+      //   js can understand the html
+      let myDiv = document.getElementById("mydiv");
+      console.log(myDiv); // returns the div element with id "mydiv"
+      let para = document.createElement("p");
+      para.innerHTML =
+        "Hello <b>Amith</b>, meet <b>John</b> my friend from <b>class 1</b>";
+      myDiv.appendChild(para);
+    </script>
+  </body>
+</html>

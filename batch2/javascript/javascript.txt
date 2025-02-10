@@ -39,8 +39,6 @@ They are created using three keywords
 ---------------------------------------------------------------------
 ###JavaScript Data Types
 =================================================================================
-Datatypes are those kind of values which can be stored in a given variable in JavaScript.
-
 JavaScript has several data types, including:
 - Number: used to store numeric values
 - String: used to store text values
@@ -77,7 +75,7 @@ Conditional statements
 another block of code if the condition is false
 - switch statement: used to execute a block of code based on the value of a variable
 - nested if-else : if-else inside if-else
-- if-else-if ladder: Multiple conditions are checked
+- ifelse-if ladder: Multiple conditions are checked
 if-else-if-else-if-else
 ---------------------------------------------------------------------
 Loops:
@@ -171,3 +169,91 @@ let person = {
   hobbies: ["reading", "swimming", "cycling"],
   isMarried: true,
 }
+----------------------------------------------------------------------------
+Functions in Javascript:
+=================================================================================
+Functions in JavaScript are blocks of code that can be executed multiple times from different parts 
+of the program.
+- Functions can take arguments
+- Functions can return values
+- Functions can be defined using function declaration syntax or function expression syntax
+- Functions can be called using function name or function reference
+
+Types of functions:
+ a. Based on parameters:
+ - Non-parameterised functions:
+   - Do not take in inputs while being called
+   - Example: function greet() { 
+      console.log("Hello, World!"); 
+    }
+  
+  - Parameterised functions:
+    - Take in inputs while being called
+    - Example: function greet(name) {
+      console.log("Hello, " + name + "!");
+    }
+  
+b. Based on names:
+  - Named functions:
+    - Have a name
+    - Can be called by name
+    - Example: function greet() {
+      console.log("Hello, World!");
+    }
+
+  - Anonymous function:
+    - Do not have a name
+    - Can be called using a reference (variable)
+    - Example: let greet = function() {
+      console.log("Hello, World!");
+    }
+  
+  - Arrow function:
+    - A concise way to write a function
+    - Do not have a name and can be called using a reference
+    - Example: let greet = () => {
+        console.log("Hello, World!");
+      }
+  
+----------------------------------------------------------------------------------------
+BOM and DOM
+=====================================================================================
+- BOM (Browser Object Model):
+  - Provides access to the browser's functionality
+  - Provides functions and attributes for JavaScript to communicate with the browser
+  - BOM is the top-level object in the browser's object hierarchy
+  - BOM is accessed using the window object
+  - BOM has the following properties and methods:
+    - alert()
+    - confirm()
+    - prompt()
+    - setTimeout()
+    - setInterval()
+  // Example: take user input from browser, show the output outside of the document
+  
+- DOM (Document Object Model):
+  - It provides access to the current HTML page
+  - It is a tree-like structure that represents the HTML document
+  - DOM is accessed using the document object
+  - DOM has the following properties and methods:
+    - getElementById()
+    - getElementsByClassName()
+    - getElementsByTagName()
+    - createElement()
+    - appendChild()
+
+    DOM TREE: (present inside the browser memory)
+    It is a tree like representation of all the HTML elements
+    It has the following properties:
+    - Node
+    - Element
+    - Text
+    - Comment
+
+    DOM reads the html in node-object format and creates a dom tree out of it.
+    DOM is used to manipulate the html elements in the browser.
+    DOM is used to add, remove, modify the elements in the browser.
+
+
+  -------Question:  Write a program to take in user input for content, font size, color of the
+      font and display the data accordingly

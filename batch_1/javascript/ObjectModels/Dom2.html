@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Create elements and show on html</h1>
+    <div id="my-div"></div>
+    <script>
+      let myDiv = document.getElementById("my-div");
+      console.log(myDiv);
+      let para = document.createElement("p");
+      para.textContent = "Hello World, I am a paragraph added using javascript";
+      myDiv.appendChild(para);
+    </script>
+  </body>
+</html>

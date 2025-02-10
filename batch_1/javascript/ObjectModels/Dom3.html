@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Interactive Web Page</h1>
+    <script>
+      let content = prompt("Enter your content");
+      let fontSize = prompt("Enter font size");
+      let color = prompt("Enter color");
+      let bgColor = prompt("Enter background color");
+      let para = document.createElement("p");
+      para.textContent = content;
+      para.style.fontSize = fontSize + "px";
+      para.style.color = color;
+      para.style.backgroundColor = bgColor;
+      document.body.appendChild(para);
+    </script>
+  </body>
+</html>
