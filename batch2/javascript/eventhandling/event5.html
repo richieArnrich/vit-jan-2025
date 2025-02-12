@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .display {
+        height: 50px;
+        border: 1px solid black;
+      }
+      .calculator {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-primary text-white">Simple Calculator</h1>
+    <div class="calculator p-2">
+      <div class="display" id="display"><code>output</code></div>
+      <div class="nos p-2">
+        <div class="row p-2">
+          <div class="col">
+            <input
+              type="button"
+              value="1"
+              class="btn btn-primary"
+              onclick="captureNumber(1)"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="2"
+              class="btn btn-primary"
+              onclick="captureNumber(2)"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="3"
+              class="btn btn-primary"
+              onclick="captureNumber(3)"
+            />
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col">
+            <input
+              type="button"
+              value="4"
+              class="btn btn-primary"
+              onclick="captureNumber(4)"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="5"
+              class="btn btn-primary"
+              onclick="captureNumber(5)"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="5"
+              class="btn btn-primary"
+              onclick="captureNumber(5)"
+            />
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col">
+            <input
+              type="button"
+              value="7"
+              class="btn btn-primary"
+              onclick="captureNumber(7)"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="8"
+              class="btn btn-primary"
+              onclick="captureNumber(8)"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="9"
+              class="btn btn-primary"
+              onclick="captureNumber(9)"
+            />
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col">
+            <input
+              type="button"
+              value="+"
+              class="btn btn-success"
+              onclick="calculate(`+`)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentNo = 0;
+      let result = 0;
+      let displayEle = document.getElementById("display");
+      function captureNumber(num) {
+        currentNo = num;
+        displayEle.innerHTML = currentNo;
+      }
+
+      function calculate(operation) {
+        if (operation === "+") {
+          result = result + currentNo;
+          displayEle.innerHTML = result;
+        }
+      }
+    </script>
+  </body>
+</html>
