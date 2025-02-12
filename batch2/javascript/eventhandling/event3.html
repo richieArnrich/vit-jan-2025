@@ -1,0 +1,47 @@
+<!-- create a scenario where you can display the number of clicks you did and display the previous
+ number of clicks on reset -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="bg-warning text-center">Click Counter</h1>
+    <div class="text-center">
+      <p class="p-3">Clicks: <span id="clicks"></span></p>
+      <button class="btn btn-primary" id="click-btn" onclick="increment()">
+        Click Me!
+      </button>
+      <button class="btn btn-warning" id="click-btn" onclick="reset()">
+        Reset
+      </button>
+      <p id="prev" class="p-3">Previous clicks: <span id="prevspan"></span></p>
+    </div>
+    <script>
+      let count = 0;
+      let spanEle = document.getElementById("clicks");
+      let prevP = document.getElementById("prev");
+      let prevSpan = document.getElementById("prevspan");
+      prevP.style.display = "none";
+      function increment() {
+        count++;
+        spanEle.innerHTML = count;
+      }
+
+      function reset() {
+        prevP.style.display = "block";
+        prevSpan.innerHTML += count + "-";
+        count = 0;
+        spanEle.innerHTML = count;
+      }
+    </script>
+  </body>
+</html>
