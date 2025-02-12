@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Press your keyboard</h1>
+    <input
+      type="text"
+      id="input"
+      placeholder="type something"
+      onchange="handleChange()"
+    />
+    <h4>I have entered: <span id="myInput"></span></h4>
+    <h4>I have typed <span id="letter"></span> times</h4>
+    <h4>I have typed <span id="letter2"></span> letters</h4>
+    
+    <script>
+      let spanEle = document.getElementById("myInput");
+      let spanEle2 = document.getElementById("letter");
+      let spanEle3 = document.getElementById("letter2");
+      let count = 0;
+      function handleChange() {
+        let value = document.getElementById("input").value;
+        spanEle.innerText = value;
+        count++;
+        spanEle2.innerText = count;
+        spanEle3.innerText = value.length;
+      }
+    </script>
+  </body>
+</html>
