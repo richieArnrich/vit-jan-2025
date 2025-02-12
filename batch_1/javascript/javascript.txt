@@ -241,3 +241,36 @@ BOM and DOM
     - appendChild()
   -------Question:  Write a program to take in user input for content, font size, color of the
       font and display the data accordingly
+
+-------------------------------------------------------------------------------------------
+Event Handling in Javascript
+=====================================================================================
+  - Event handling is the process of detecting and responding to user interactions with a web page
+  - Events are actions that occur when a user interacts with a web page, such as clicking a button
+  - Event handling is used to create interactive web pages
+  - There are two types of event handling in JavaScript:
+  - Inline event handling: This is the most basic form of event handling. It involves writing the
+  event handling code directly in the HTML element that triggers the event.
+  - Event handling using JavaScript: This is the most common form of event handling. It involves
+  writing the event handling code in a separate JavaScript file or in the HTML file using the
+  script tag.
+  - Event handling using JavaScript involves the following steps:
+  1. Select the element that will trigger the event
+  2. Add an event listener to the element
+  3. Define the event handling function
+  4. Attach the event handling function to the event listener
+  - Event handling using JavaScript has the following advantages:
+    - It allows for more flexibility and control over the event handling code
+    - It allows for more complex event handling logic
+    - It allows for event handling code to be reused across multiple elements
+    - It allows for event handling code to be easily maintained and updated
+  - Event handling using JavaScript has the following disadvantages:
+    - It requires more code and complexity
+    - It can be more difficult to debug
+    - It can be more difficult to understand for beginners
+  - Event handling using JavaScript has the following best practices:
+    - Use event delegation to reduce the number of event listeners
+    - Use event bubbling to simplify event handling code
+    - Use event listeners to attach event handling functions to elements
+    - Use event handling functions to handle events in a centralized location
+ 

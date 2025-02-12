@@ -7,13 +7,15 @@
   </head>
   <body>
     <h1>Interactive Webpage</h1>
+    <!-- para has to come here -->
+
     <script>
       let content = prompt("Enter content");
       let color = prompt("Enter font color");
       let background = prompt("Enter background color");
       let fontSize = prompt("Enter font size");
 
-      let para = document.createElement("p");
+      let para = document.createElement("p"); //create an element p
       para.textContent = content;
       para.style.color = color;
       para.style.backgroundColor = background;
