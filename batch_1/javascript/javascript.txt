@@ -172,7 +172,8 @@ let person = {
 ----------------------------------------------------------------------------
 Functions in Javascript:
 =================================================================================
-Functions in JavaScript are blocks of code that can be executed multiple times from different parts of the program.
+Functions in JavaScript are blocks of code that can be executed multiple times from different parts 
+of the program.
 - Functions can take arguments
 - Functions can return values
 - Functions can be defined using function declaration syntax or function expression syntax
@@ -228,9 +229,10 @@ BOM and DOM
     - prompt()
     - setTimeout()
     - setInterval()
-
+  // Example: take user input from browser, show the output outside of the document
+  
 - DOM (Document Object Model):
-  - It provides access to the current the HTML page
+  - It provides access to the current HTML page
   - It is a tree-like structure that represents the HTML document
   - DOM is accessed using the document object
   - DOM has the following properties and methods:
@@ -239,6 +241,20 @@ BOM and DOM
     - getElementsByTagName()
     - createElement()
     - appendChild()
+
+    DOM TREE: (present inside the browser memory)
+    It is a tree like representation of all the HTML elements
+    It has the following properties:
+    - Node
+    - Element
+    - Text
+    - Comment
+
+    DOM reads the html in node-object format and creates a dom tree out of it.
+    DOM is used to manipulate the html elements in the browser.
+    DOM is used to add, remove, modify the elements in the browser.
+
+
   -------Question:  Write a program to take in user input for content, font size, color of the
       font and display the data accordingly
 
@@ -274,3 +290,29 @@ Event Handling in Javascript
     - Use event listeners to attach event handling functions to elements
     - Use event handling functions to handle events in a centralized location
  
+------------------------------------------------------------------------------------------
+Asynchronous Javascript
+=====================================================================================
+  - Asynchronous JavaScript is a programming paradigm that allows for the execution of multiple
+  tasks concurrently, improving the responsiveness and performance of web applications.
+  - Asynchronous JavaScript is used to handle tasks that take a long time to complete, such as
+  network requests, database queries, and file uploads.
+  - Asynchronous JavaScript is used to improve the user experience by allowing for the execution
+  of multiple tasks concurrently, improving the responsiveness and performance of web applications.
+  - Asynchronous Programming will execute multiple functions parallely
+- Asynchronous JavaScript has the following advantages:
+  - Improves the responsiveness and performance of web applications
+  - Allows for the execution of multiple tasks concurrently
+  - Improves the user experience
+- Asynchronous JavaScript has the following disadvantages:
+  - Can be difficult to understand and debug
+  - Can be difficult to manage and maintain
+  - Can lead to callback hell
+- Asynchronous JavaScript has the following best practices:
+  - Use callbacks to handle asynchronous tasks
+  - Use promises to handle asynchronous tasks
+  - Use async/await to handle asynchronous tasks
+
+
+All synchronous functions will be executed first
+Then all asynchronous functions will be executed
