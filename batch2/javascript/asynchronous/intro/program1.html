@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Blocking Operation</h1>
+    <script>
+      function person1() {
+        console.log("Person 1 says hey shopkeeper, I need the following items");
+        let items = [
+          "Milk",
+          "Vegetables",
+          "Rice",
+          "Dal",
+          "Butter",
+          "Oil",
+          "Detergent",
+          "Soaps",
+        ];
+        // blocking operations
+        for (let i = 0; i < items.length; i++) {
+          console.log(items[i]);
+        }
+        console.log("Person 2 finised buying items");
+      }
+
+      function person2() {
+        console.log("Person 2 says hey shopkeeper, I need the following items");
+        const items = ["Shampoo"];
+        for (let i = 0; i < items.length; i++) {
+          console.log(items[i]);
+        }
+      }
+
+      person1();
+      person2();
+    </script>
+  </body>
+</html>

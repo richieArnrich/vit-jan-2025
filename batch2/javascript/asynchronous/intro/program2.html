@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Asynchronous Operation</h1>
+    <script>
+      function person1() {
+        console.log("Person 1 says hey shopkeeper, I need the following items");
+        setTimeout(() => {
+          let items = [
+            "Milk",
+            "Vegetables",
+            "Rice",
+            "Dal",
+            "Butter",
+            "Oil",
+            "Detergent",
+            "Soaps",
+          ];
+          for (let i = 0; i < items.length; i++) {
+            console.log(items[i]);
+          }
+          console.log("Person 1 finised buying items");
+        }, 6000);
+      }
+
+      function person2() {
+        console.log("Person 2 says hey shopkeeper, I need the following items");
+        const items = ["Shampoo"];
+        for (let i = 0; i < items.length; i++) {
+          console.log(items[i]);
+        }
+        console.log("Person 2 finished buying items");
+      }
+
+      person1();
+      person2();
+    </script>
+  </body>
+</html>

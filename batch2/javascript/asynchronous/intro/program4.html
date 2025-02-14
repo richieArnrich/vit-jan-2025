@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Asynchronous Programming</h1>
+    <form>
+      <select name="choice" id="choice">
+        <option value="1">Display h1</option>
+        <option value="2">Display list</option>
+      </select>
+      <input type="submit" onclick="handleSubmit()" />
+    </form>
+    <div id="display"></div>
+    <script>
+      const display = document.getElementById("display");
+      let data;
+      function assignData(callback) {
+        console.log("Hi, assigning data");
+        setTimeout(() => {
+          data = ["Amith", "John", "Shankar", "Sachit"];
+          console.log("Data assigned successfully");
+          callback();
+        }, 3000);
+      }
+
+      function displayDatah1() {
+        console.log("Hi, displaying data");
+        data.map((name) => {
+          //mapping each name in the array to h1
+          let h1 = document.createElement("h1");
+          h1.textContent = name;
+          display.appendChild(h1); //h1 has to be child of display
+        });
+      }
+
+      function displayDataList() {
+        console.log("Hi, displaying data");
+        data.map((name) => {
+          //mapping each name in the array to li
+          let li = document.createElement("li");
+          li.textContent = name;
+          display.appendChild(li);
+        });
+      }
+
+      function handleSubmit() {
+        let choice = document.getElementById("choice").value;
+        if (choice === "1") {
+          assignData(displayDatah1);
+        } else if (choice === "2") {
+          assignData(displayDataList);
+        }
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

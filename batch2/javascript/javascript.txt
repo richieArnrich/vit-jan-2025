@@ -290,3 +290,29 @@ Event Handling in Javascript
     - Use event listeners to attach event handling functions to elements
     - Use event handling functions to handle events in a centralized location
  
+------------------------------------------------------------------------------------------
+Asynchronous Javascript
+=====================================================================================
+  - Asynchronous JavaScript is a programming paradigm that allows for the execution of multiple
+  tasks concurrently, improving the responsiveness and performance of web applications.
+  - Asynchronous JavaScript is used to handle tasks that take a long time to complete, such as
+  network requests, database queries, and file uploads.
+  - Asynchronous JavaScript is used to improve the user experience by allowing for the execution
+  of multiple tasks concurrently, improving the responsiveness and performance of web applications.
+  - Asynchronous Programming will execute multiple functions parallely
+- Asynchronous JavaScript has the following advantages:
+  - Improves the responsiveness and performance of web applications
+  - Allows for the execution of multiple tasks concurrently
+  - Improves the user experience
+- Asynchronous JavaScript has the following disadvantages:
+  - Can be difficult to understand and debug
+  - Can be difficult to manage and maintain
+  - Can lead to callback hell
+- Asynchronous JavaScript has the following best practices:
+  - Use callbacks to handle asynchronous tasks
+  - Use promises to handle asynchronous tasks
+  - Use async/await to handle asynchronous tasks
+
+
+All synchronous functions will be executed first
+Then all asynchronous functions will be executed
