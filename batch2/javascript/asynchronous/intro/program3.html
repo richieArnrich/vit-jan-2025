@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Asynchronous Program</h1>
+    <script>
+      let data;
+      function assignData(cb) {
+        console.log("assigning data");
+        setTimeout(() => {
+          data = ["Amith", "John", "Suhas", "Farhaan"];
+          console.log("Data assigned");
+          cb();
+        }, 3000);
+      }
+
+      function displayData() {
+        console.log("displaying data");
+        console.log(data);
+      }
+
+      assignData(displayData);
+      //   callback function:
+      //  a function passed as a parameter to another
+      //   the function which accepts the callback function is called as higher order function
+    </script>
+  </body>
+</html>

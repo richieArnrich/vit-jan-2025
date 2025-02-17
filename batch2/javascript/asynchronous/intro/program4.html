@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <select name="choice" id="choice">
+        <option value="1">Display as h1</option>
+        <option value="2">Display as list</option>
+      </select>
+      <input type="submit" onclick="handleSubmit()" />
+    </form>
+    <div id="display"></div>
+    <script>
+      let displayEle = document.getElementById("display");
+      let data;
+
+      function assignData(cb) {
+        console.log("assigning data");
+        setTimeout(() => {
+          data = ["Amith", "John", "Suhas", "Farhaan"];
+          console.log("Data assigned");
+          cb();
+        }, 3000);
+      }
+
+      function displayDatah1() {
+        displayEle.textContent = "";
+        data.map((name) => {
+          let h1 = document.createElement("h1");
+          h1.textContent = name;
+          displayEle.appendChild(h1);
+        });
+      }
+      function displayDataList() {
+        displayEle.textContent = "";
+        data.map((name) => {
+          let li = document.createElement("li");
+          li.textContent = name;
+          displayEle.appendChild(li);
+        });
+      }
+      function handleSubmit() {
+        if (!data) {
+          displayEle.textContent = "Loading....";
+        }
+        let choice = document.getElementById("choice").value;
+        if (choice === "1") {
+          assignData(displayDatah1);
+        } else if (choice === "2") {
+          assignData(displayDataList);
+        }
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

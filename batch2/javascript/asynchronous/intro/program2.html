@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Blocking Operation</h1>
+    <script>
+      function person1() {
+        console.log("p1 says hey shopkeeper, i need these items");
+        setTimeout(() => {
+          const items = ["Apple", "Milk", "Banana", "Rice", "Dal", "Vegetable"];
+          for (let i = 0; i < items.length; i++) {
+            console.log(`p1 is buying ${items[i]}`);
+          }
+          console.log("p1 finished buying items");
+        }, 3000);
+      }
+
+      function person2() {
+        console.log("p2 says hey shopkeeper, i need these items");
+        const items = ["shampoo"];
+        for (let i = 0; i < items.length; i++) {
+          console.log(`p2 is buying ${items[i]}`);
+        }
+        console.log("p2 finished buying items");
+      }
+
+      person1();
+      person2();
+    </script>
+  </body>
+</html>
