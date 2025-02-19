@@ -334,3 +334,29 @@ another function, and so on, creating a long chain of callbacks.
 - Callback hell can lead to errors and exceptions.
 - Callback hell can be avoided by using promises and async/await.
 ================================================================================
+Promises:
+=================================================================================
+- A promise is a value that may not be available yet, but will be available at some point
+- Promises are functions that determine the eventual completion of an asynchronous function
+- Promises are used to handle asynchronous tasks, such as network requests, database
+queries, and file uploads.
+- Promises are used to improve the responsiveness and performance of web applications.
+- Promises are used to handle errors and exceptions.
+
+States of a promise object:
+- Pending: Initial state, neither fulfilled nor rejected.
+- Fulfilled: Successful, the promise has been resolved.
+- Rejected: Failed, the promise has been rejected.
+================================================================================
+Async/Await:
+=================================================================================
+- Async/await is a syntax sugar for promises.
+- It simplifies the syntax for promise
+- Async/await is used to handle asynchronous tasks, such as network requests, database
+queries, and file uploads.
+- Async/await is used to improve the readability and maintainability of code.
+- Async/await is used to handle errors and exceptions.
+
+Async keyword:
+- The async keyword is used to declare a function that returns a promise.
+- The async keyword is used to enable the use of the await keyword inside the function.

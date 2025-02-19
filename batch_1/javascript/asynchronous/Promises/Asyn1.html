@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Async Await</h1>
+    <script>
+      let email = "richie@gmail.com"; //simulating admin details in the db
+      let password = "123456";
+      let data;
+      function assignData(userEmail, userPwd) {
+        return new Promise(function (resolve, reject) {
+          setTimeout(() => {
+            if (userEmail === email && userPwd === password) {
+              data = [
+                { id: 1, name: "John" },
+                { id: 2, name: "Jane" },
+              ];
+              resolve(data);
+            } else {
+              reject("Invalid Email or Password");
+            }
+          }, 2000);
+        });
+      }
+
+      async function retrieveData(userEmail, userPwd) {
+        try {
+          data = await assignData(userEmail, userPwd);
+          console.log(data);
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      retrieveData("richie@gmail.com", "123");
+    </script>
+  </body>
+</html>
