@@ -360,3 +360,10 @@ queries, and file uploads.
 Async keyword:
 - The async keyword is used to declare a function that returns a promise.
 - The async keyword is used to enable the use of the await keyword inside the function.
+
+Await keyword:
+- The await keyword is used to pause the execution of a function until a promise is
+resolved or rejected.
+- The await keyword is used to handle the result of a promise.
+- The await keyword is used to improve the readability and maintainability of code.
+================================================================================
