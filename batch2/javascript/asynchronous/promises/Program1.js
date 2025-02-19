@@ -1,7 +1,7 @@
 function pMaker(req) {
   return new Promise(function (resolve, reject) {
     setTimeout(() => {
-      reject(req);
+      resolve(req);
     }, 2000);
   });
 }

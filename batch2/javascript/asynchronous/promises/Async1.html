@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Async And Await</h1>
+    <script>
+      // Define a function that returns a promise
+      let admin = {
+        username: "admin",
+        password: "password",
+      };
+
+      function getData(username, pwd) {
+        // simulate a function which queries database
+        return new Promise(function (resolve, reject) {
+          setTimeout(() => {
+            if (username === admin.username && pwd === admin.password) {
+              resolve({
+                data: [
+                  { id: 1, name: "John" },
+                  { id: 2, name: "Jane" },
+                ],
+                status: true,
+              });
+            } else {
+              reject({
+                status: false,
+                message: "Invalid username or password",
+              });
+            }
+          }, 2000);
+        });
+      }
+
+      async function displayData() {
+        try {
+          let response = await getData("admin", "password123"); //this line must wait until getData() completes the execution
+          console.log(response.data);
+        } catch (err) {
+          console.log(err.message);
+        }
+      }
+
+      displayData();
+    </script>
+  </body>
+</html>
