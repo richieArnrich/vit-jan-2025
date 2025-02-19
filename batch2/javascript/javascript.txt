@@ -316,3 +316,21 @@ Asynchronous Javascript
 
 All synchronous functions will be executed first
 Then all asynchronous functions will be executed
+
+=================================================================================
+Callbacks:
+=================================================================================
+- A callback is a function that is passed as an argument to another function, to be executed
+later.
+- Callbacks are used to handle asynchronous tasks, such as network requests, database
+queries, and file uploads.
+- Callbacks are used to improve the responsiveness and performance of web applications.
+- Callbacks are used to handle errors and exceptions.
+--------------------------------------------------------------------------------
+Callback Hell:
+- Callback hell is a situation where a function calls another function, which calls
+another function, and so on, creating a long chain of callbacks.
+- Callback hell can be difficult to understand and debug.
+- Callback hell can lead to errors and exceptions.
+- Callback hell can be avoided by using promises and async/await.
+================================================================================
