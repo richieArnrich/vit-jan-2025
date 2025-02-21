@@ -367,3 +367,23 @@ resolved or rejected.
 - The await keyword is used to handle the result of a promise.
 - The await keyword is used to improve the readability and maintainability of code.
 ================================================================================
+JSON
+================================================================================
+- JSON (JavaScript Object Notation) is a lightweight data interchange format.
+- JSON is a text-based format that is easy to read and write.
+- JSON is used to exchange data between web servers, web applications, and mobile apps.
+- JSON is used to store and retrieve data in web applications.
+- JSON is used to improve the performance and scalability of web applications.
+-----------------
+Convert JS object to json:
+JSON.stringify(obj)
+-----------------
+Convert json to JS object:
+JSON.parse(json)
+------------------
+Syntax:
+let jsonData = "{
+  "name" : "Anil",
+  "age" : 25
+  "address" : "India"
+}"

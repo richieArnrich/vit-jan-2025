@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // json data
+      let jsonStr = `{"firstName": "Anil", "lastName": "Kumar", "age": 22}`;
+      console.log(typeof jsonStr);
+      console.log(jsonStr);
+      // parse json string to js object
+      let obj = JSON.parse(jsonStr);
+      console.log(typeof obj);
+      console.log(obj);
+
+      let myObj = {
+        favCar: "Skoda Superb",
+        favBike: "Honda Highness",
+        favTravel: "Iceland",
+      };
+
+      console.log(myObj);
+      //   convert myObj into json str
+      let myjson = JSON.stringify(myObj);
+      console.log(myjson);
+    </script>
+  </body>
+</html>
