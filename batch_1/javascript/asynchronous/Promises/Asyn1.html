@@ -11,7 +11,10 @@
       let email = "richie@gmail.com"; //simulating admin details in the db
       let password = "123456";
       let data;
+
       function assignData(userEmail, userPwd) {
+        // query intodb --> promise based function
+        // async keyword will make a function resolve a promise by default
         return new Promise(function (resolve, reject) {
           setTimeout(() => {
             if (userEmail === email && userPwd === password) {
