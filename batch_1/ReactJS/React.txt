@@ -1,0 +1,35 @@
+======================================================================================
+                                    React JS
+======================================================================================
+What is React JS?
+=====================================
+React JS is a JavaScript library for building user interfaces. 
+It's used for creating reusable UI components and managing the state changes of these components. 
+React is a popular choice for building complex, data-driven
+applications.
+
+What is a components?
+=====================================
+A component is a small, reusable piece of code that represents a UI element, such as a button
+or a form. Components can be combined to create more complex UI elements, such as a navigation bar
+or a dashboard.
+
+Types of components:
+======================
+1. Functional Components: These are the simplest type of component. They are defined as a function
+which returns 1 html element at a time
+2. Class Components: These are more complex and are defined as a class which extends React.Component
+class and has a render() which returns 1 html elements at a time.
+-------------------------------
+Functional Component:
+---------------------
+Steps to create a functional component-
+1. Import React
+2. Define a function
+3. Use the function to return JSX
+4. Export the function as a component
+5. Call the function in App.jsx
+-----------
+What is JSX?
+=====================================
+JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files

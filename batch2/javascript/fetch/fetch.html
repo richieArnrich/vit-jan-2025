@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="bg-warning p-3 text-center text-white">
+      Fetch Data From an API
+    </h1>
+    <table id="table" class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <!-- data is added dynamically -->
+      </tbody>
+    </table>
+    <script>
+      let table = document.getElementById("table");
+      let tbody = document.getElementById("tbody");
+
+      // Fetch data from the API
+      function fetchData() {
+        fetch("https://jsonplaceholder.typicode.com/users")
+          .then((res) => res.json())
+          .then((res) => {
+            displayTable(res);
+          })
+          .catch((err) => console.log(err));
+      }
+
+      function displayTable(users) {
+        users.map((user) => {
+          console.log(user);
+          let row = document.createElement("tr");
+          row.innerHTML += `<td>${user.id}</td>
+          <td>${user.name}</td>
+          <td>${user.username}</td>
+          <td>${user.email}</td>`;
+          tbody.appendChild(row);
+        });
+      }
+      fetchData();
+
+      let myname = "RIchie";
+      let age = 11;
+      console.log("hello my name is " + myname + " my age is " + age);
+      console.log(`Hello my name is ${myname} my age is ${age}`);
+    </script>
+  </body>
+</html>
