@@ -32,3 +32,52 @@ Steps to create a functional component-
 What is JSX?
 =====================================
 JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files
+--------------------------------------------------------------------------------------------------------
+Components in React
+======================
+Components are the building blocks of React applications. 
+They are reusable pieces of code that represent UI elements.
+
+Components are of two types:
+1. Functional Components
+2. Class Components
+
+Functional Component: 
+---------------------
+A functional component is a simple function that returns JSX.
+It does not have its own state and does not have lifecycle methods.
+
+Steps to create a functional component:
+1. Import React
+2. Define a function
+3. Use the function to return JSX
+4. Export the function as a component
+5. Call the function in App.jsx
+----------------------------
+Class Components:
+-------------------
+A class component is a class that extends(inherit) React.Component.
+It has its own state and lifecycle methods.
+It has a render function which returns a jsx
+-------------
+State in React
+=====================
+State is an object that stores the data of a component.
+It is used to store the data that changes over time.
+It is defined in the constructor
+Eg: 
+constructor(props){
+    super(props);
+    this.state = {
+        name: 'John',
+        age: 25
+    }
+}
+
+Props:
+------
+Props are short for properties. They are immutable objects that are passed to a component from its parent.
+They are used to pass data from a parent component to a child component.
+They are passed in key=value pairs
+Eg:
+<MyFunc1 name="John" age: 25 />
