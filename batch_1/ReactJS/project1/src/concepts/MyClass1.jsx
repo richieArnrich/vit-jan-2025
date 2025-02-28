@@ -20,6 +20,7 @@ class MyClass1 extends React.Component {
     }, 3000);
   };
   render() {
+    console.log("render called");
     return (
       <div>
         <h1>My First Class Component</h1>
