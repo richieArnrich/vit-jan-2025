@@ -81,3 +81,87 @@ They are used to pass data from a parent component to a child component.
 They are passed in key=value pairs
 Eg:
 <MyFunc1 name="John" age: 25 />
+
+---------------------------------------------------------------------------------------------
+Event Handling in ReactJS
+==========================
+Click Event in React:
+-------------------
+To handle a click event in React, we use the onClick event handler.
+Eg:
+<button onClick={this.handleClick}>Click me</button>
+
+Click event in a functional component
+--------------------------------
+To handle a click event in a functional component, we use the onClick event handler.
+Eg:
+import React from "react";
+
+function FuncClick() {
+  const handleClick = () => {
+    let h1 = document.getElementById("h1");
+    h1.innerHTML =
+      "Hello my name is Rajath and I am 30 years old and I am a professor";
+  };
+  return (
+    <div>
+      <h1 id="h1">
+        Hello my name is Rohan and I am 10 years old and I am a student
+      </h1>
+      <button onClick={handleClick}>Change Output</button>
+    </div>
+  );
+}
+
+export default FuncClick;
+---------------------------------------------
+Click Event in ClassComponent
+--------------------------------
+To handle a click event in a class component, we use the onClick event handler.
+
+import React, { Component } from "react";
+
+class ClassClick extends Component {
+  handleClick = () => {
+    let h3Ele = document.getElementById("h3");
+    h3Ele.innerHTML =
+      "Hello my name is Suraj and I am 35 years old and I am a sportsman";
+  };
+  render() {
+    return (
+      <div>
+        <h3 id="h3">
+          Hello my name is Manoj and I am 25 years old and I am a student
+        </h3>
+        <button onClick={this.handleClick}>Change Output</button>
+      </div>
+    );
+  }
+}
+
+export default ClassClick;
+----------------------------------------------------------------------------
+State Management in React:
+--------------------------------
+State is an object that stores the data and properties of the component. It can be changed during the
+course of time
+
+setState():
+----------------
+The setState() method is used to update the state of a component. It takes an object as an
+argument and updates the state with the new values.
+-----------------------------------------------------------------------------------------------
+================================================================================================
+State in Functional Component:
+--------------------------------
+To manage state in a functional component, we use the useState hook.
+useState Hook:
+----------------
+The useState hook is used to add state to a functional component. It returns an array with two
+elements: the current state value and a function to update the state.
+
+Hook in react:
+----------------
+Hooks are a new addition to React in version 16.8. They allow you to use state
+and other React features without writing a class.
+Hooks help us to use class based features in a functional component 
