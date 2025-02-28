@@ -8,6 +8,8 @@ import StateClass from "./concepts/events/StateClass";
 import ToggleState from "./concepts/events/ToggleState";
 import FuncState from "./concepts/events/FuncState";
 import InputFunc from "./concepts/events/InputFunc";
+import ApiClass from "./concepts/ApiClass";
+import FuncApi from "./concepts/FuncApi";
 
 function App() {
   return (
@@ -19,12 +21,14 @@ function App() {
       <Footer /> */}
       {/* <MyFunc1 name="John" age="25" />
       <MyClass name="Amith" age="24" /> */}
-      <FuncClick />
+      {/* <FuncClick />
       <ClassClick />
       <StateClass />
       <ToggleState />
       <FuncState />
-      <InputFunc />
+      <InputFunc /> */}
+      {/* <ApiClass/> */}
+      <FuncApi />
     </>
   );
 }
