@@ -36,7 +36,7 @@ function ApiFunc() {
                 <div className="card" style={{ width: "18rem" }}>
                   <img
                     className="card-img-top"
-                    src={`https://covers.openlibrary.org/b/${book.key}/${book.value}-${book.size}.jpg`}
+                    src={`https://covers.openlibrary.org/b/id/${book.cover_id}-L.jpg`}
                     alt="Card image cap"
                   />
                   <div className="card-body">

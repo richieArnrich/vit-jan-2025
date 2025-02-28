@@ -164,3 +164,22 @@ Hook in react:
 Hooks are a new addition to React in version 16.8. They allow you to use state
 and other React features without writing a class.
 Hooks help us to use class based features in a functional component 
+================================================================================================
+UseEffect hook:
+-----------------
+The useEffect hook is used to handle side effects in functional components. It is used to perform
+side effects such as API calls, setting timers, and updating the DOM.
+UseEffect takes two parameters:
+1. A function that will be executed when the component mounts or updates.
+2. An array of values that will be used to determine when the function should be executed again
+[dependency array].
+================================================================================================
+React-Router-DOM
+--------------------------------
+React Router is a popular library for client-side routing in React applications. It allows you to navigate between
+different routes in your application without requiring a full page reload.
+================================================================================================
+Single Page Applications:
+--------------------------------
+Single Page Applications (SPAs) are web applications that load a single HTML page and dynamically update
+the page as the user interacts with the application.
