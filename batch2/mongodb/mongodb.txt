@@ -11,3 +11,27 @@ A document is a JSON object that contains data
 A document is a single unit of data
 A document can have multiple fields
 A document is stored within a collection
+----------------------------------------
+What is a collection?
+======================
+A collection is a group of documents
+A collection is similar to a table in relational databases
+A collection is a container for documents
+--------------------------------------------------------------------
+Mongodb Functions:
+==================
+insertOne()
+insertMany()
+updateOne()
+updateMany()
+deleteOne()
+deleteMany()
+
+What is $in?
+================
+$in is a query operator
+$in is used to select documents where the value of a field is in a specified array
+----------------------------------------------------------
+How do you make an input case insensitive?
+==============================================
+You can use the $regex operator with the i flag to make an input case insensitive.

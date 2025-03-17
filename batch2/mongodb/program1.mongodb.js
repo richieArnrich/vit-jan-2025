@@ -72,4 +72,5 @@ db.cars.find();
 // db.cars.find({ make: { $in: ["Honda", "Volkswagen"] } });
 
 //update the price of the car CarHO03 to 22000
-db.cars.updateOne({ _id: "CarHO03" }, { $set: { price: 22000 } });
+// db.cars.updateOne({ _id: "CarHO03" }, { $set: { price: 22000 } });
+db.cars.find({ make: { $regex: "^Honda$", $options: "i" } });
