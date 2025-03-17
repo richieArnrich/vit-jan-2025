@@ -1,0 +1,13 @@
+                MongoDB
+========================================================
+Mongodb is NoSQL Database
+Data is not stored in the form of row and column (relational)
+Data is stored in the form of JSON (key-value pair)
+Mongodb is a document-oriented database
+
+What is a document?
+======================
+A document is a JSON object that contains data
+A document is a single unit of data
+A document can have multiple fields
+A document is stored within a collection
