@@ -1,0 +1,34 @@
+                Node JS
+=========================================================================
+What is NodeJS?
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine that allows developers to run JavaScript on the server-side. It provides an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+Modules in NodeJS
+-----------------
+Node.js is built on the concept of modules. A module is a self-contained piece of code that
+can be used in other parts of the application(reusable). Node.js has a built-in module system that allows developers to easily import and use modules in their code.
+
+Types of modules:-
+1. Built-in modules: These are modules that come pre-installed with Node.js. They are
+available for use without any additional installation. Examples include the 'http' and 'fs' modules.
+2. Third-party modules: These are modules that are not part of the Node.js core but can
+be installed using the npm package manager. Examples include the 'express' and 'mongodb' modules.
+3. Custom modules: These are modules that are created by developers for their own use. They
+can be used in other parts of the application.
+-----------------------------------------------------------------------------------------
+Node JS FS module
+=====================
+The FS module in Node.js is a built-in module that provides an interface to the file system.
+It allows developers to perform various file system operations such as reading, writing, deleting, and renaming files etc.
+
+Writing files:-
+writeFileSync()
+writeFile()
+
+Reading files:-
+readFileSync()
+readFile()
+
+Appending files:-
+appendFileSync()
+appendFile()
