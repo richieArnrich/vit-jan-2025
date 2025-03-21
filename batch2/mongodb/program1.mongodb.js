@@ -73,4 +73,16 @@ db.cars.find();
 
 //update the price of the car CarHO03 to 22000
 // db.cars.updateOne({ _id: "CarHO03" }, { $set: { price: 22000 } });
-db.cars.find({ make: { $regex: "^Honda$", $options: "i" } });
+// db.cars.find({ make: { $regex: "^Honda$", $options: "i" } });
+
+//update the rental_status based on the presence of the car id in bookings collection
+db.cars.updateMany(
+  {
+    _id: { $in: db.bookings.distinct("car_id") },
+  },
+  {
+    $set: { rental_status: "booked" },
+  }
+);
+
+db.cars.find({ rental_status: "booked" });

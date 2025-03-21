@@ -5,11 +5,6 @@ use("car-rentals");
 //fetch details of booking booking_03
 db.bookings.aggregate([
   {
-    $match: {
-      _id: "booking_03",
-    },
-  },
-  {
     $lookup: {
       from: "users",
       localField: "customer_id",
@@ -40,6 +35,11 @@ db.bookings.aggregate([
       car_model: "$car_details.model",
       car_brand: "$car_details.brand",
       car_price: "$car_details.price",
+    },
+  },
+  {
+    $sort: {
+      car_price: -1, //descending
     },
   },
 ]);
