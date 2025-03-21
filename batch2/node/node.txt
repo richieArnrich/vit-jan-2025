@@ -1,0 +1,40 @@
+                NODE JS
+==========================================================================
+What is NodeJS?
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine that allows developers to run JavaScript on the server-side. It provides an event-driven, non-blocking I/O model that makes it lightweight
+----------------------------------------------------------------------------
+
+Modules in NodeJS
+====================
+Modules are pieces of code that can be reused.
+They are used to organize code and make it reusable.
+There are three types of modules in NodeJS:
+1. Built-in modules: These are modules that come pre-installed with NodeJS. They can
+be used without installing any additional packages.
+2. Third-party modules: These are modules that are not part of the NodeJS core.
+They need to be installed using npm (Node Package Manager) before they can be used.
+3. Custom modules: These are modules that are created by developers to solve specific
+problems.
+-------------------------------------------------------------------------------
+File System module in Node js
+================================
+The File System module in Node.js is used to interact with the file system. It provides a way
+to read and write files, create directories, and perform other file system operations.
+
+Read File functions:-
+1. readFile() - This function is used to read the contents of a file. It takes three
+parameters: filename, options, and callback.
+2. readFileSync() - This function is used to read the contents of a file. It takes
+two parameters: filename and options.
+
+Writing file functions:-
+1. writeFile() - This function is used to write to a file. It takes three parameters:
+filename, data, and options.
+2. writeFileSync() - This function is used to write to a file. It takes two parameters
+filename and data.
+
+Append into File:-
+1. appendFile() - This function is used to append data to a file. It takes three
+parameters: filename, data, and options.
+2. appendFileSync() - This function is used to append data to a file. It takes two
+parameters: filename and data.

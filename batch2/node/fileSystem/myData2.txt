@@ -1,0 +1,1 @@
+I am written asynchronously into the file
