@@ -1,0 +1,32 @@
+                Express JS
+=====================================================================
+What is ExpressJS?
+-------------------
+ExpressJS is a popular Node.js web framework that allows developers to build fast, scalable, and maintainable web applications. It provides a flexible way to create web servers, handle HTTP requests, and render responses.
+It provides a simple syntax to create REST APIs
+It provides a lot of middleware functions to handle HTTP requests and responses
+
+Key Features of ExpressJS
+---------------------------
+### Routing
+ExpressJS provides a powerful routing system that allows developers to define routes for their application. Routes can be defined using the `app.get()`, `app.post()`, `app.put()`, and `
+app.delete()` methods.
+
+### Middleware
+ExpressJS provides a wide range of middleware functions that can be used to handle HTTP requests and responses.
+
+### Controllers
+ExpressJS provides a way to separate the application logic from the routing logic using controllers.
+
+### Static files
+ExpressJS provides a way to serve static files such as images, CSS, and JavaScript files.
+
+### Templating Engines
+ExpressJS provides a way to render dynamic templates using templating engines such as EJS, Pug
+
+### Error Handling
+ExpressJS provides a way to handle errors using error handling middleware functions.
+
+### Security
+ExpressJS provides a way to secure the application using middleware functions such as helmet, csurf, etc
+----------------------------

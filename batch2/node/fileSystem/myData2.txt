@@ -1,1 +1,2 @@
-I am written asynchronously into the file
+I am content inside myData2.txt
+This is a new line of data
