@@ -29,6 +29,32 @@ app.get("/home", (req, res) => {
   });
 });
 
+//route to display profiles.ejs
+app.get("/profiles", (req, res) => {
+  res.render("profiles", {
+    profiles: [
+      {
+        name: "John Doe",
+        age: 25,
+        profession: "student",
+        pic: "images/profile-pic.jpg",
+      },
+      {
+        name: "Jane Doe",
+        age: 30,
+        profession: "teacher",
+        pic: "images/profile-pic.jpg",
+      },
+      {
+        name: "Bob Smith",
+        age: 35,
+        profession: "engineer",
+        pic: "images/profile-pic.jpg",
+      },
+    ],
+  });
+});
+
 app.listen(4000, () => {
   console.log("Server is running on port 4000");
 });
