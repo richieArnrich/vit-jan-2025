@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title%></title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h1>Hi I am EJS FILE</h1>
+    <p>And my name is <%= name%></p>
+    <!-- display user name -->
+    <ol>
+      <% users.forEach(user =>{ %>
+      <li><%= user %></li>
+      <%}) %>
+    </ol>
+    <h3>Images here!!!</h3>
+    <img src="images/image1.jpg" alt="chameleon" />
+  </body>
+</html>

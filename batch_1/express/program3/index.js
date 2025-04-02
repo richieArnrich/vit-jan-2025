@@ -15,3 +15,5 @@ app.get("/home", (req, res) => {
 app.listen(4000, () => {
   console.log("Server is running on port 4000");
 });
+
+//just 2 mins..
