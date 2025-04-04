@@ -17,4 +17,17 @@ router.get("/getusers", async (req, res) => {
   }
 });
 
+router.post("/registeruser", async (req, res) => {
+  try {
+    console.log(req.body);
+    const { name, email, password, contact } = req.body;
+    const user = new User({ name, email, password, contact });
+    await user.save();
+    res.json({ message: "user registered successfully", userDoc: user });
+  } catch (err) {
+    console.log(err);
+    res.json({ message: "error in user registeration", error: err });
+  }
+});
+
 module.exports = router;
