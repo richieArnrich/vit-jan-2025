@@ -1,5 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const userController = require("./controllers/userControllers.js");
+
 const app = express();
 
 const dbconn = async () => {
@@ -12,9 +14,13 @@ const dbconn = async () => {
   }
 };
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.json({ message: "API working" });
 });
+
+app.use("/users", userController);
 
 const PORT = 4000;
 app.listen(PORT, () => {
