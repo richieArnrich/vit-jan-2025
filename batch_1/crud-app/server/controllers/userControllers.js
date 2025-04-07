@@ -5,7 +5,8 @@ const router = express.Router();
 
 //import user schema
 const User = require("../models/userSchema.js");
-
+const jwt = require("jsonwebtoken");
+const SECRET_KEY = "secrete@123";
 //route and controller to get all users
 router.get("/getusers", async (req, res) => {
   try {
@@ -27,6 +28,28 @@ router.post("/registeruser", async (req, res) => {
   } catch (err) {
     console.log(err);
     res.json({ message: "error in user registeration", error: err });
+  }
+});
+
+//login route
+router.post("/loginuser", async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.json({ message: "user not found" });
+    }
+    //match the password
+    if (password === user.password) {
+      //create a token
+      const token = jwt.sign({ userId: user._id }, SECRET_KEY, {
+        expiresIn: "1h",
+      });
+      return res.json({ message: "login successful", user, token });
+    }
+  } catch (err) {
+    console.log(err);
+    res.json({ message: "error in user login" });
   }
 });
 

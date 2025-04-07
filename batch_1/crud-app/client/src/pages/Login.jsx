@@ -1,10 +1,46 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { api } from "../utils/ApiInstance";
+import { storeUser } from "../utils/Storage";
 
 function Login() {
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [user, setUser] = useState(null);
+  const [token, setToken] = useState(null);
+  const [loggedIn, setLogin] = useState(false);
+  const navigate = useNavigate();
+
+  function login(event) {
+    const userlogin = {
+      email: email,
+      password: password,
+    };
+    api
+      .post("/users/loginuser", userlogin)
+      .then((res) => {
+        console.log(res.data);
+        alert(res.data.message);
+        setUser(res.data.user);
+        setToken(res.data.token);
+        console.log(user);
+        console.log(token);
+        storeUser(user, token);
+        setLogin(true);
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Error loggin in");
+      });
+    event.preventDefault();
+  }
+  if (loggedIn) {
+    navigate("/");
+  }
   return (
     <div>
-      <h1>Welcome</h1>
+      <h1 className="display-4 text-center p-3">Login!!🍕✌️</h1>
       <form
         className=""
         style={{
@@ -17,7 +53,15 @@ function Login() {
       >
         <div class="form-group">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" class="form-control" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
         </div>
         <div class="form-group">
           <label htmlFor="password">Password</label>
@@ -26,8 +70,13 @@ function Login() {
             id="password"
             name="password"
             class="form-control"
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
           />
-          <button className="btn btn-success mt-2">Login</button>
+          <button className="btn btn-success mt-2" onClick={login}>
+            Login
+          </button>
           <p>
             Do not have an account??{" "}
             <Link to="/register" style={{ textDecoration: "underline" }}>

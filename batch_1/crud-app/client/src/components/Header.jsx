@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getUser } from "../utils/Storage";
 
 function Header() {
   //  get todays date
@@ -7,6 +8,8 @@ function Header() {
   const date = today.getDate();
   const month = today.getMonth() + 1;
   const year = today.getFullYear();
+
+  const user = getUser();
   return (
     <div
       className="d-flex justify-content-between text-white p-2"
@@ -17,9 +20,18 @@ function Header() {
         {date}-{month}-{year}
       </div>
       <div>
-        <Link className="btn btn-primary" to="/login">
-          Login
-        </Link>
+        {user ? (
+          <div>
+            <span>{user.name}</span>
+            <Link className="btn btn-primary" to="/login">
+              Logout
+            </Link>
+          </div>
+        ) : (
+          <Link className="btn btn-primary" to="/login">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
