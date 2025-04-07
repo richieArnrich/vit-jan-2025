@@ -1,11 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { api } from "../utils/ApiInstance";
+import { storeUser } from "../utils/Storage";
 
 function Login() {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
+  const navigate = useNavigate();
 
   function loginUser(event) {
     if (email && password) {
@@ -19,6 +21,8 @@ function Login() {
         .then((res) => {
           console.log(res.data);
           alert("User logged in successfully");
+          storeUser(res.data.user, res.data.token);
+          navigate("/");
         })
         .catch((err) => {
           console.log(err);

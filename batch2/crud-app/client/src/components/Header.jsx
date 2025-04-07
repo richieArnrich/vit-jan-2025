@@ -1,11 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getToken, getUser } from "../utils/Storage";
 
 function Header() {
   // get todays date
   const today = new Date();
   const date = today.toLocaleDateString("en-US");
   console.log(date);
+  const token = getToken();
+  const user = getUser();
+
+  //function to remove user and token
+  function logOut() {
+    localStorage.removeItem("user");
+    localStorage.removeItem("token");
+    alert("User logged out");
+    window.location.reload();
+  }
+
   return (
     <div
       style={{ backgroundColor: "#E6E6FA" }}
@@ -13,11 +25,18 @@ function Header() {
     >
       <div className="h5 text-uppercase fw-light">User Management</div>
       <div className="fw-light">{date}</div>
-      <div>
-        <Link className="btn btn-primary" to="/login">
-          Login
+      {user && <div className="fw-light">Logged in as: {user.name}</div>}
+      {token ? (
+        <Link className="btn btn-danger" onClick={logOut}>
+          Logout
         </Link>
-      </div>
+      ) : (
+        <div>
+          <Link className="btn btn-primary" to="/login">
+            Login
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
