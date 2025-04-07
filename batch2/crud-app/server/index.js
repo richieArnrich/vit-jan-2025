@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const userController = require("./controllers/userControllers.js");
-
+const cors = require("cors");
 const app = express();
 
 const dbconn = async () => {
@@ -15,6 +15,12 @@ const dbconn = async () => {
 };
 
 app.use(express.json());
+app.use(
+  cors({
+    origin: ["http://localhost:5173"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 
 app.get("/", (req, res) => {
   res.json({ message: "API working" });
@@ -22,7 +28,7 @@ app.get("/", (req, res) => {
 
 app.use("/users", userController);
 
-const PORT = 4000;
+const PORT = 8000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   dbconn();
