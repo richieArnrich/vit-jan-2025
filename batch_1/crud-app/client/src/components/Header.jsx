@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   //  get todays date
@@ -6,11 +7,6 @@ function Header() {
   const date = today.getDate();
   const month = today.getMonth() + 1;
   const year = today.getFullYear();
-  // get current time
-  const hours = today.getHours();
-  const minutes = today.getMinutes();
-  const seconds = today.getSeconds();
-  // format time
   return (
     <div
       className="d-flex justify-content-between text-white p-2"
@@ -19,6 +15,11 @@ function Header() {
       <div>My User Management</div>
       <div>
         {date}-{month}-{year}
+      </div>
+      <div>
+        <Link className="btn btn-primary" to="/login">
+          Login
+        </Link>
       </div>
     </div>
   );

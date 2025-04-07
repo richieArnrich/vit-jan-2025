@@ -1,10 +1,10 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Layout from "./components/Layout";
+import PageRoutes from "./pages/PageRoutes";
 
 function App() {
   return (
     <>
-      <Layout />
+      <PageRoutes />
     </>
   );
 }

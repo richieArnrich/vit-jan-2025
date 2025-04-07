@@ -2,6 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const userController = require("./controllers/userControllers.js");
+
+const cors = require("cors");
+
 app.get("/api", (req, res) => {
   res.json({ message: "Hello, World!" });
 });
@@ -16,6 +19,12 @@ const dbconn = async () => {
   }
 };
 
+app.use(
+  cors({
+    origin: ["http://localhost:5173"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 app.use(express.json());
 app.use("/users", userController);
 

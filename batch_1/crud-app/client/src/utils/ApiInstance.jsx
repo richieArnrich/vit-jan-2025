@@ -1,0 +1,6 @@
+// create api instance for localhost: 4000
+//import axios
+import axios from "axios";
+export const api = axios.create({
+  baseURL: "http://localhost:4000",
+});
