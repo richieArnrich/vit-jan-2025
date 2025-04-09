@@ -23,7 +23,7 @@ function Header() {
       style={{ backgroundColor: "#E6E6FA" }}
       className="d-flex justify-content-between p-3 align-items-center"
     >
-      <div className="h5 text-uppercase fw-light">User Management</div>
+      <div className="h5 text-uppercase fw-light">Recipe Finder</div>
       <div className="fw-light">{date}</div>
       {user && <div className="fw-light">Logged in as: {user.name}</div>}
       {token ? (
