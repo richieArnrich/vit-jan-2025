@@ -10,22 +10,29 @@ function Header() {
   const year = today.getFullYear();
 
   const user = getUser();
+
+  function logout() {
+    localStorage.removeItem("user");
+    localStorage.removeItem("token");
+    alert("user logged out");
+    window.location.reload();
+  }
   return (
     <div
-      className="d-flex justify-content-between text-white p-2"
-      style={{ backgroundColor: "#452c63", fontSize: "1.5rem" }}
+      className="d-flex justify-content-between align-items-center text-white p-2"
+      style={{ backgroundColor: "#452c63", fontSize: "1.35rem" }}
     >
-      <div>My User Management</div>
+      <div>My Recipe Finder</div>
       <div>
         {date}-{month}-{year}
       </div>
       <div>
         {user ? (
           <div>
-            <span>{user.name}</span>
-            <Link className="btn btn-primary" to="/login">
+            <span className="p-2">{user.name}</span>
+            <button className="btn btn-danger" onClick={logout}>
               Logout
-            </Link>
+            </button>
           </div>
         ) : (
           <Link className="btn btn-primary" to="/login">

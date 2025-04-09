@@ -7,9 +7,6 @@ import { storeUser } from "../utils/Storage";
 function Login() {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
-  const [user, setUser] = useState(null);
-  const [token, setToken] = useState(null);
-  const [loggedIn, setLogin] = useState(false);
   const navigate = useNavigate();
 
   function login(event) {
@@ -22,21 +19,14 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         alert(res.data.message);
-        setUser(res.data.user);
-        setToken(res.data.token);
-        console.log(user);
-        console.log(token);
-        storeUser(user, token);
-        setLogin(true);
+        storeUser(res.data.user, res.data.token);
+        navigate("/");
       })
       .catch((err) => {
         console.log(err);
         alert("Error loggin in");
       });
     event.preventDefault();
-  }
-  if (loggedIn) {
-    navigate("/");
   }
   return (
     <div>

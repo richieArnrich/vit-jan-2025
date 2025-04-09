@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Home from "../pages/Home";
 import Login from "./Login";
 import Register from "./Register";
+import ViewRecipe from "./ViewRecipe";
 function PageRoutes() {
   return (
     <div>
@@ -13,6 +14,7 @@ function PageRoutes() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/viewrecipe/:id" element={<ViewRecipe />} />
           </Route>
         </Routes>
       </BrowserRouter>
